@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .static {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .relative {
+            position: relative;
+            background-color: #2196F3;
+            color: white;
+            top: 10px;
+            left: 10px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .absolute-container {
+            position: relative;
+            height: 200px;
+            background-color: #FF9800;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: #f44336;
+            top: 50px;
+            left: 50px;
+            padding: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: #9C27B0;
+            color: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sticky-container {
+            height: 1000px;
+            background-color: #FFEB3B;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            background-color: #795548;
+            color: white;
+            top: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Static Positioning (default)</h2>
+        <div class="static">This element is statically positioned. It is the default positioning for all elements.</div>
+    </div>
+
+    <div class="section">
+        <h2>Relative Positioning</h2>
+        <div class="relative">This element is relatively positioned. It is moved 10px down and 10px to the right from its normal position.</div>
+    </div>
+
+    <div class="section">
+        <h2>Absolute Positioning</h2>
+        <div class="absolute-container">
+            This container is relatively positioned.
+            <div class="absolute">This element is absolutely positioned within the container.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Fixed Positioning</h2>
+        <div class="fixed">This element is fixed to the top of the viewport. It stays in the same position when you scroll.</div>
+    </div>
+
+    <div class="section">
+        <h2>Sticky Positioning</h2>
+        <div class="sticky-container">
+            Scroll down to see the sticky element.
+            <div class="sticky">This element is sticky. It sticks to the top of the viewport when you reach its scroll position.</div>
+        </div>
+    </div>
+</body>
+</html>

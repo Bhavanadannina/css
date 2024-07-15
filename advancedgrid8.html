@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex CSS Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar main main"
+                "footer footer footer";
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 10px;
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #2196F3;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+                "content1 content2"
+                "content3 content4";
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #f44336;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content1 {
+            grid-area: content1;
+            background-color: #FF9800;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content2 {
+            grid-area: content2;
+            background-color: #9C27B0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content3 {
+            grid-area: content3;
+            background-color: #03A9F4;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content4 {
+            grid-area: content4;
+            background-color: #8BC34A;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">
+            <div class="content1">Content 1</div>
+            <div class="content2">Content 2</div>
+            <div class="content3">Content 3</div>
+            <div class="content4">Content 4</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

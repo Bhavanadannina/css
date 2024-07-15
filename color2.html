@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Properties in CSS</title>
+    <style>
+        /* Text color */
+        h1 {
+            color: #4CAF50; /* Green */
+        }
+
+        h2 {
+            color: #2196F3; /* Blue */
+        }
+
+        p {
+            color: #555; /* Gray */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background color */
+        .bg-yellow {
+            background-color: #FFEB3B; /* Yellow */
+            padding: 20px;
+        }
+
+        .bg-blue {
+            background-color: #03A9F4; /* Light Blue */
+            padding: 20px;
+            color: white;
+        }
+
+        /* Linear gradient background */
+        .gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from pink to orange */
+            padding: 20px;
+            color: white;
+        }
+
+        /* Background image */
+        .bg-image {
+            background-image: url('https://via.placeholder.com/800x200');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Repeating background image */
+        .bg-repeat {
+            background-image: url('https://via.placeholder.com/50');
+            background-repeat: repeat;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Colorful Webpage</h1>
+    <h2>Demonstrating Various CSS Color Properties</h2>
+    <p>This is a paragraph with default text color.</p>
+
+    <div class="bg-yellow">
+        <p>This paragraph has a yellow background.</p>
+    </div>
+
+    <div class="bg-blue">
+        <p>This paragraph has a light blue background and white text color.</p>
+    </div>
+
+    <div class="gradient">
+        <p>This paragraph has a linear gradient background from pink to orange.</p>
+    </div>
+
+    <div class="bg-image">
+        <h2>Background Image</h2>
+        <p>This section has a centered background image.</p>
+    </div>
+
+    <div class="bg-repeat">
+        <p>This section has a repeating background image.</p>
+    </div>
+</body>
+</html>

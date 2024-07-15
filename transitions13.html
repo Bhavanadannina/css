@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition-property: all;
+        }
+
+        .transition1 {
+            background-color: #4CAF50;
+            transition-duration: 1s;
+        }
+
+        .transition1:hover {
+            background-color: #FF9800;
+        }
+
+        .transition2 {
+            background-color: #2196F3;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .transition2:hover {
+            background-color: #f44336;
+            width: 150px;
+        }
+
+        .transition3 {
+            background-color: #FF9800;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+        }
+
+        .transition3:hover {
+            background-color: #4CAF50;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box transition1">Hover Me</div>
+    <div class="box transition2">Hover Me</div>
+    <div class="box transition3">Hover Me</div>
+</body>
+</html>

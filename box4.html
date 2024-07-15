@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid #4CAF50;
+            background-color: #f0f0f0;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        .example {
+            margin-bottom: 40px;
+        }
+
+        .label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model Demonstration</h1>
+
+    <div class="example">
+        <div class="label">Content Box Model (Default)</div>
+        <div class="box content-box">This box uses the content-box model.</div>
+        <p>In the content-box model, the width and height of the box are applied to the content only. Padding and border are added outside the content area.</p>
+    </div>
+
+    <div class="example">
+        <div class="label">Border Box Model</div>
+        <div class="box border-box">This box uses the border-box model.</div>
+        <p>In the border-box model, the width and height of the box include the content, padding, and border. The total width and height of the box do not change with the addition of padding and border.</p>
+    </div>
+
+    <h2>Effects of Padding, Border, and Margin</h2>
+
+    <div class="example">
+        <div class="label">Padding</div>
+        <div class="box" style="padding: 40px;">This box has increased padding (40px).</div>
+        <p>Padding increases the space inside the border, pushing the content inward.</p>
+    </div>
+
+    <div class="example">
+        <div class="label">Border</div>
+        <div class="box" style="border: 10px solid #2196F3;">This box has a thicker border (10px).</div>
+        <p>The border surrounds the padding and content, increasing the overall size of the box.</p>
+    </div>
+
+    <div class="example">
+        <div class="label">Margin</div>
+        <div class="box" style="margin: 40px;">This box has increased margin (40px).</div>
+        <p>Margin increases the space outside the border, pushing the box away from other elements.</p>
+    </div>
+</body>
+</html>

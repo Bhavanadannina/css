@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Bootstrap CSS Framework</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS to override Bootstrap */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .jumbotron {
+            background-color: #333;
+            color: white;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-custom {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #45a049;
+        }
+
+        .btn-custom:focus {
+            outline: none;
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Bootstrap Example</h1>
+            <p class="lead">This webpage demonstrates the use of Bootstrap CSS framework.</p>
+            <hr class="my-4">
+            <p>It uses Bootstrap's responsive classes and components.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Section One</h2>
+                <p>This is the first section of content.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Section Two</h2>
+                <p>This is the second section of content.</p>
+            </div>
+        </div>
+
+        <button class="btn btn-custom">Custom Button</button>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

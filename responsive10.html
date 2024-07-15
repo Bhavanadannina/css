@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Images</h1>
+        <picture>
+            <source srcset="images/image-1200.jpg 1200w, images/image-800.jpg 800w, images/image-400.jpg 400w"
+                    sizes="(max-width: 599px) 100vw, (max-width: 1199px) 50vw, 33vw">
+            <img src="https://www.thespruce.com/thmb/p_UNZ5EDFNtNkNcHQA8wzmHLX-8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/plants-with-big-flowers-4138211-hero-b10becb169064cc4b3c7967adc1b22e1.jpg" alt="Beautiful Landscape" class="responsive-image">
+        </picture>
+        <p>This image adapts to different screen sizes and resolutions.</p>
+    </div>
+</body>
+</html>
